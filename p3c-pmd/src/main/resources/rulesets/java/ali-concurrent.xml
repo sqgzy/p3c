@@ -2,7 +2,11 @@
 <ruleset name="AlibabaJavaConcurrent"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Rule set which defines AlibabaJavaConcurrent
+    </description>
 
     <rule name="ThreadPoolCreationRule"
           language="java"
@@ -58,6 +62,7 @@ Positive example 3：
           since="1.6"
           message="java.concurrent.AvoidUseTimerRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidUseTimerRule">
+        <description>java.concurrent.AvoidUseTimerRule.rule.msg</description>
         <priority>1</priority>
         <example>
             <![CDATA[
@@ -100,6 +105,7 @@ Positive example 3：
           message="java.concurrent.ThreadShouldSetNameRule.rule.msg"
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.ThreadShouldSetNameRule">
+        <description>java.concurrent.ThreadShouldSetNameRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -174,6 +180,7 @@ Positive example 3：
           message="java.concurrent.ThreadLocalShouldRemoveRule.rule.msg"
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.ThreadLocalShouldRemoveRule">
+        <description>java.concurrent.ThreadLocalShouldRemoveRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -224,6 +231,7 @@ Positive example 3：
           message="java.concurrent.AvoidConcurrentCompetitionRandomRule.rule.msg"
           dfa="true"
           class="com.alibaba.p3c.pmd.lang.java.rule.concurrent.AvoidConcurrentCompetitionRandomRule">
+        <description>java.concurrent.AvoidConcurrentCompetitionRandomRule.rule.msg</description>
         <priority>3</priority>
         <example>
             <![CDATA[

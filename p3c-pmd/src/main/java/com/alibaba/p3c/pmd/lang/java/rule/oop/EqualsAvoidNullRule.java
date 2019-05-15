@@ -26,7 +26,6 @@ import net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit;
 import net.sourceforge.pmd.lang.java.ast.ASTFieldDeclaration;
 import net.sourceforge.pmd.lang.java.ast.ASTLiteral;
 import net.sourceforge.pmd.lang.java.ast.ASTName;
-import net.sourceforge.pmd.lang.java.ast.ASTPrimaryExpression;
 import net.sourceforge.pmd.lang.java.ast.ASTPrimaryPrefix;
 import net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId;
 import net.sourceforge.pmd.lang.java.ast.AbstractJavaNode;
@@ -62,11 +61,6 @@ public class EqualsAvoidNullRule extends AbstractAliRule {
                 return super.visit(node, data);
             }
             for (Node invocation : equalsInvocations) {
-                // https://github.com/alibaba/p3c/issues/471
-                if (callerIsLiteral(invocation)) {
-                    return super.visit(node, data);
-                }
-
                 // if arguments of equals is complicate expression, skip the check
                 List<? extends Node> simpleExpressions = invocation.findChildNodesWithXPath(INVOCATION_PREFIX_XPATH);
                 if (simpleExpressions == null || simpleExpressions.isEmpty()) {
@@ -102,14 +96,6 @@ public class EqualsAvoidNullRule extends AbstractAliRule {
             throw new RuntimeException("XPath expression " + XPATH + " failed: " + e.getLocalizedMessage(), e);
         }
         return super.visit(node, data);
-    }
-
-    private boolean callerIsLiteral(Node equalsInvocation) {
-        if (equalsInvocation instanceof ASTPrimaryExpression) {
-            ASTPrimaryPrefix caller = equalsInvocation.getFirstChildOfType(ASTPrimaryPrefix.class);
-            return caller != null && caller.getFirstChildOfType(ASTLiteral.class) != null;
-        }
-        return false;
     }
 
     private String getInvocationName(AbstractJavaNode javaNode) {

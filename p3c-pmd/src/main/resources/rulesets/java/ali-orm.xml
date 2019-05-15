@@ -2,13 +2,17 @@
 
 <ruleset name="AlibabaJavaOrm" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
+    <description>
+        Rule set which defines AlibabaJavaOrm
+    </description>
     <rule name="IbatisMethodQueryForListRule"
           language="java"
           since="1.6"
           message="java.naming.IbatisMethodQueryForListRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.orm.IbatisMethodQueryForListRule">
+        <description>java.orm.IbatisMethodQueryForListRule.rule.msg</description>
         <priority>3</priority>
     </rule>
 

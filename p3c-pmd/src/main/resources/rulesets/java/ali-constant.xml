@@ -2,12 +2,16 @@
 
 <ruleset name="AlibabaJavaConstants" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
+    <description>
+        Rule set which defines AlibabaJavaConstants
+    </description>
 
     <rule name="UpperEllRule"
         message="java.constant.UpperEllRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.constant.UpperEllRule">
+        <description>java.constant.UpperEllRule.rule.msg</description>
         <priority>1</priority>
         <example>
       <![CDATA[
@@ -27,6 +31,7 @@ Positive example:
     <rule name="UndefineMagicConstantRule"
         message="java.constant.UndefineMagicConstantRule.rule.msg"
         class="com.alibaba.p3c.pmd.lang.java.rule.constant.UndefineMagicConstantRule">
+        <description>java.constant.UndefineMagicConstantRule.rule.msg</description>
         <priority>3</priority>
 
         <example>

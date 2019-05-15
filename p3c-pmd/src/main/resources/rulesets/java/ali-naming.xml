@@ -2,14 +2,17 @@
 
 <ruleset name="AlibabaJavaNaming" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
-
+    <description>
+        Rule set which defines AlibabaJavaNaming
+    </description>
     <rule name="ClassNamingShouldBeCamelRule"
           language="java"
           since="1.6"
           message="java.naming.ClassNamingShouldBeCamelRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.ClassNamingShouldBeCamelRule">
+        <description>java.naming.ClassNamingShouldBeCamelRule.rule.msg</description>
         <priority>3</priority>
     </rule>
 
@@ -18,6 +21,7 @@
           since="1.4"
           message="java.naming.AbstractClassShouldStartWithAbstractNamingRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.AbstractClassShouldStartWithAbstractNamingRule">
+        <description>java.naming.AbstractClassShouldStartWithAbstractNamingRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -35,6 +39,7 @@
           since="1.6"
           message="java.naming.ExceptionClassShouldEndWithExceptionRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.ExceptionClassShouldEndWithExceptionRule">
+        <description>java.naming.ExceptionClassShouldEndWithExceptionRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -50,6 +55,7 @@
           since="1.6"
           message="java.naming.TestClassShouldEndWithTestNamingRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.TestClassShouldEndWithTestNamingRule">
+        <description>java.naming.TestClassShouldEndWithTestNamingRule.rule.msg</description>
         <priority>3</priority>
         <example>
             <![CDATA[
@@ -64,6 +70,7 @@
           since="1.6"
           message="java.naming.LowerCamelCaseVariableNamingRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.LowerCamelCaseVariableNamingRule">
+        <description>java.naming.LowerCamelCaseVariableNamingRule.rule.msg</description>
         <priority>2</priority>
     </rule>
 
@@ -72,6 +79,7 @@
           since="1.6"
           message="java.naming.AvoidStartWithDollarAndUnderLineNamingRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.AvoidStartWithDollarAndUnderLineNamingRule">
+        <description>java.naming.AvoidStartWithDollarAndUnderLineNamingRule.rule.msg</description>
         <priority>2</priority>
     </rule>
 
@@ -80,6 +88,7 @@
           since="1.6"
           message="java.naming.ConstantFieldShouldBeUpperCaseRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.ConstantFieldShouldBeUpperCaseRule">
+        <description>java.naming.ConstantFieldShouldBeUpperCaseRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -98,6 +107,7 @@
           since="1.6"
           message="java.naming.ServiceOrDaoClassShouldEndWithImplRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.ServiceOrDaoClassShouldEndWithImplRule">
+        <description>java.naming.ServiceOrDaoClassShouldEndWithImplRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -120,6 +130,7 @@
           since="1.6"
           message="java.naming.PackageNamingRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.PackageNamingRule">
+        <description>java.naming.PackageNamingRule.rule.msg</description>
         <priority>3</priority>
         <example>
             <![CDATA[
@@ -133,6 +144,7 @@
           since="1.6"
           message="java.naming.BooleanPropertyShouldNotStartWithIsRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.BooleanPropertyShouldNotStartWithIsRule">
+        <description>java.naming.BooleanPropertyShouldNotStartWithIsRule.rule.msg</description>
         <priority>2</priority>
         <example>
             <![CDATA[
@@ -149,6 +161,7 @@
           since="1.6"
           message="java.naming.ArrayNamingShouldHaveBracketRule.rule.msg"
           class="com.alibaba.p3c.pmd.lang.java.rule.naming.ArrayNamingShouldHaveBracketRule">
+        <description>java.naming.ArrayNamingShouldHaveBracketRule.rule.msg</description>
         <priority>3</priority>
         <example>
             <![CDATA[

@@ -50,7 +50,7 @@
     </entry>
 
     <entry key="java.exception.MethodReturnWrapperTypeRule.violation.msg">
-        <![CDATA[the return type is primitive[%s], return a value of wrapper class[%s], may cause NullPointerException]]>
+        <![CDATA[the return type is primitive【%s】，return a value of wrapper class【%s】，may cause NullPointerException]]>
     </entry>
 
     <entry key="java.exception.MethodReturnWrapperTypeRule.rule.msg">
@@ -130,7 +130,7 @@ Note: In JDK8, Instant can be used to replace Date, Calendar is replaced by Loca
     </entry>
 
     <entry key="java.concurrent.AvoidManuallyCreateThreadRule.violation.msg">
-        <![CDATA[Explicitly creating threads is not allowed, use thread pool instead.]]>
+        <![CDATA[Explicitly creating threads is not allowed，use thread pool instead.]]>
     </entry>
     <entry key="java.concurrent.AvoidManuallyCreateThreadRule.rule.msg">
         <![CDATA[Threads should be provided by thread pools. Explicitly creating threads is not allowed.]]>
@@ -227,7 +227,7 @@ Note: Below are the problems created by usage of Executors for thread pool creat
         <![CDATA[Do not cast subList in class ArrayList, otherwise ClassCastException will be thrown. ]]>
     </entry>
     <entry key="java.set.ClassCastExceptionWithSubListToArrayListRule.rule.msg.desc">
-        <![CDATA[Note:Do not cast, if you have to do, please use new Conllection(sublist result). ]]>
+        <![CDATA[Note:Do not cast, if you have to do，please use new Conllection(sublist result). ]]>
     </entry>
     <entry key="java.set.ClassCastExceptionWithToArrayRule.violation.msg">
         <![CDATA[[%s] should use arguments with  array size.]]>
@@ -385,13 +385,13 @@ Javadoc should include method instruction, description of parameters, return val
         <![CDATA[please javadoc the purpose of method [%s] in detail]]>
     </entry>
     <entry key="java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.violation.msg.parameter">
-        <![CDATA[method [%s] should have javadoc for parameter [%s]]]>
+        <![CDATA[parameter [%s] of method [%s] should have javadoc]]>
     </entry>
     <entry key="java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.violation.msg.return">
         <![CDATA[return value of method [%s] should have javadoc]]>
     </entry>
     <entry key="java.comment.AbstractMethodOrInterfaceMethodMustUseJavadocRule.violation.msg.exception">
-        <![CDATA[method [%s] should have javadoc for exception [%s]]]>
+        <![CDATA[exception [%s] of method [%s] should have javadoc]]>
     </entry>
 
     <entry key="java.comment.AvoidCommentBehindStatementRule.rule.msg">
@@ -508,4 +508,8 @@ Note: If attribute is null or does not exist, ${var} will be shown directly on w
         <![CDATA[variable [%s] should add ! after $]]>
     </entry>
 
+    <!-- orm -->
+    <entry key="java.orm.IbatisMethodQueryForListRule.rule.msg">
+        <![CDATA[java.orm.IbatisMethodQueryForListRule.rule.msg。]]>
+    </entry>
 </properties>

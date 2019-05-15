@@ -66,9 +66,14 @@ public class ThreadLocalShouldRemoveRule extends AbstractAliRule {
         if (variableDeclarator == null) {
             return false;
         }
-        ASTMethodDeclarator initialValueMethod = variableDeclarator.getFirstDescendantOfType(ASTMethodDeclarator.class);
-        if (initialValueMethod != null && METHOD_INITIAL_VALUE.equals(initialValueMethod.getImage())) {
-            return true;
+
+        //ASTMethodDeclarator initialValueMethod = variableDeclarator.getFirstDescendantOfType(ASTMethodDeclarator.class);
+        List<ASTMethodDeclarator> methodList = variableDeclarator.findDescendantsOfType(ASTMethodDeclarator.class,true);
+        if(methodList!=null && methodList.size()>0) {
+            ASTMethodDeclarator initialValueMethod = methodList.get(0);
+            if (initialValueMethod != null && METHOD_INITIAL_VALUE.equals(initialValueMethod.getImage())) {
+                return true;
+            }
         }
         ASTName name = variableDeclarator.getFirstDescendantOfType(ASTName.class);
         return name != null && WITH_INITIAL.equals(name.getImage());

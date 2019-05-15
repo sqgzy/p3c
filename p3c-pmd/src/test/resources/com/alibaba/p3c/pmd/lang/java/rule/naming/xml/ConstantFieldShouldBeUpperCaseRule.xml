@@ -1,4 +1,9 @@
-<test-data>
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data
+        xmlns="http://pmd.sourceforge.net/rule-tests"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests http://pmd.sourceforge.net/rule-tests_1_0_0.xsd">
+
     <code-fragment id="ConstantFieldNamingRule">
     <![CDATA[
     public class ConstantFieldNameRuleTest {
@@ -19,8 +24,8 @@
     <test-code>
         <description>Constant name should be upper case</description>
         <expected-problems>2</expected-problems>
-        <code-ref id="ConstantFieldNamingRule" />
         <expected-linenumbers>7,9</expected-linenumbers>
+        <code-ref id="ConstantFieldNamingRule" />
     </test-code>
 
     <code-fragment id="ConstantFieldNamingRule1">

@@ -1,4 +1,8 @@
-<test-data>
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data
+        xmlns="http://pmd.sourceforge.net/rule-tests"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://pmd.sourceforge.net/rule-tests http://pmd.sourceforge.net/rule-tests_1_0_0.xsd">
 
     <code-fragment id="IbatisMethodQueryForListRule">
         <![CDATA[
@@ -20,7 +24,7 @@ public class IStudentDaoImpl implements IStudentDao {
     <test-code>
         <description>should not use ibatis method queryForList</description>
         <expected-problems>2</expected-problems>
-        <code-ref id="IbatisMethodQueryForListRule"/>
         <expected-linenumbers>4,10</expected-linenumbers>
+        <code-ref id="IbatisMethodQueryForListRule"/>
     </test-code>
 </test-data>

@@ -506,4 +506,9 @@
     </entry>
 
 
+    <!-- orm -->
+    <entry key="java.orm.IbatisMethodQueryForListRule.rule.msg">
+        <![CDATA[java.orm.IbatisMethodQueryForListRule.rule.msg。]]>
+    </entry>
+
 </properties>
